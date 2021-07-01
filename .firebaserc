@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "primeiro-projeto-2019-5": {
+      "hosting": {
+        "app": [
+          "primeiro-projeto-2019-5"
+        ]
+      }
+    }
+  }
+}
