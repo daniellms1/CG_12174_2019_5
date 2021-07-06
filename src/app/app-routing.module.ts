@@ -37,6 +37,12 @@ const routes: Routes = [
       import('./page/about/about.module').then((m) => m.AboutPageModule),
   },
 
+  // Página para exibir artigo único
+  {
+    path: 'view/:id',
+    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
+  },
+
   // Rota curinga (rotas inexistentes)
   // TEM QUE SER SEMPRE A ÚLTIMA ROTA
   {
@@ -44,6 +50,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('./page/e404/e404.module').then((m) => m.E404PageModule),
   },
+
+
 ];
 
 @NgModule({
