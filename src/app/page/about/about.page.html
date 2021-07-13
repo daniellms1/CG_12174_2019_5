@@ -12,7 +12,7 @@
     </ion-thumbnail>
     <ng-template #showLogin>
       <ion-thumbnail slot="end">
-        <img src="assets/user.png" alt="logue-se" routerLink="/login">
+     
       </ion-thumbnail>
     </ng-template>
     
@@ -20,8 +20,15 @@
 </ion-header>
 
 <ion-content class="ion-padding-horizontal">
+  <div class="header-img">
+    <img src="assets/sobre.jpg" alt="sobre">
+  </div>
+  
+  <p>Este é um aplicativo de noticías. Porém, para ter acesso aos artigos é necessário logar-se com a conta do google. </p>
 
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam id, esse minima maiores quo quam modi unde
-    corrupti dolores cupiditate, accusamus ipsam officia harum repellat officiis nisi numquam atque odit?</p>
+    <ion-button class="ion-margin-vertical" expand="block" color="warning" routerLink="/home">
+      <ion-icon name="home" slot="start"></ion-icon>
+      Página Inicial
+    </ion-button>
 
 </ion-content>
